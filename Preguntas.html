@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>Preguntas</title>
+  
+  <!--  Styles  -->
+  <link rel="stylesheet" href="styles/index.processed.css">
+</head>
+<body>
+ <h1>Comida</h1>
+  
+  <form id="FormularioComida" action="Resultado.html">
+
+    <div class="steep show" id="steep-1">
+      <h2>1. ¿Cuál es el antojito típico representativo de México?</h2>
+      <div>
+        <label>
+          <input type="radio" name="steep-001" value="0" onclick="SumarResultado(1);MostrarSiguiente()"/>
+          <span>Burrito</span>
+        </label>
+        <label>
+          <input type="radio" name="steep-001" value="1" onclick="SumarResultado(1);MostrarSiguiente()"/>
+          <span>Taco</span>
+        </label>
+        <label>
+          <input type="radio" name="steep-001" value="2" onclick="SumarResultado(1);MostrarSiguiente()"/>
+          <span>Pizza</span>
+        </label>
+      </div>
+     
+    </div>
+
+    <div class="steep" id="steep-2">
+      <h2>2. ¿El aguacate es una fruta o una verdura?</h2>
+      <div>
+        <label>
+          <input type="radio" name="steep-002" value="0" onclick="SumarResultado(2);MostrarSiguiente2()"/>
+          <span>Fruta</span>
+        </label>
+        <label>
+          <input type="radio" name="steep-002" value="1" onclick="SumarResultado(2);MostrarSiguiente2()" />
+          <span>Verdura</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="steep" id="steep-3">
+      <h2>3. ¿Qué país es el mayor exportador de café en el mundo?</h2>
+      <div>
+        <label>
+          <input type="radio" name="steep-003" value="0" onclick="SumarResultado(3)" />
+          <span>Argentina</span>
+        </label>
+        <label>
+          <input type="radio" name="steep-003" value="1" onclick="SumarResultado(3)" />
+          <span>Vietnam</span>
+        </label>
+        <label>
+          <input type="radio" name="steep-003" value="2" onclick="SumarResultado(3)" />
+          <span>Brasil</span>
+        </label>
+      </div>
+      <button id="btnEnviar" type="submit" value="enviar" onclick="GuardarResultado()">Enviar</button>
+    </div>
+   
+  </form>
+  
+  <!-- Scripts -->
+  <script src="scripts/index.js"></script>
+</body>
+</html>

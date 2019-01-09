@@ -1,0 +1,152 @@
+/**
+ * index.scss
+ * - Add any styles you want here!
+ */
+/*
+body {
+  background: #f5f5f5;
+}*/
+body {
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+
+/* steep */
+.steep {
+  padding: 30px;
+  background: #eee;
+  max-width: 400px;
+  margin: 0 auto;
+  display: none;
+}
+
+.steep.show {
+  display: block;
+}
+
+.steep h2 {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.steep div {
+  padding-top: 20px;
+}
+
+.steep div label {
+  display: block;
+  text-align: left;
+  padding: 10px;
+}
+
+.steep div label:hover {
+  background: #ddd;
+  cursor: pointer;
+}
+
+.steep div label input {
+  margin-right: 10px;
+}
+
+.steep div label span {
+  font-size: 18px;
+}
+
+#lblSaludo {
+  font-size: 24px;
+  font-style: italic;
+  color: #43A047;
+}
+
+#divBienvenida {
+  border: 2px solid #263238;
+}
+
+.text {
+  font-size: 28px;
+  font-family: helvetica;
+  weight: bold;
+  color: #212121;
+  text-transform: uppercase;
+}
+
+.parpadea {
+  animation-name: parpadeo;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: parpadeo;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo {
+  0% {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+
+@-webkit-keyframes parpadeo {
+  0% {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+
+@keyframes parpadeo {
+  0% {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+
+.boton1 {
+  width: 200px;
+  margin: 40px auto;
+  padding: 1em 0;
+  text-align: center;
+  position: relative;
+  border: none;
+  overflow: hidden;
+  z-index: 1;
+  outline: none;
+  background: -webkit-linear-gradient(center top, #7e7284 0%, #524459 100%) repeat scroll 0 0 transparent;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7e7284), color-stop(100%, #524459));
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  text-shadow: 1px 1px 1px #3a393a;
+  -webkit-box-shadow: 0px 6px 0 #443d44;
+  -webkit-box-shadow: 0px 6px 0 #383038;
+}
+
+.boton1:active {
+  position: relative;
+  top: 3px;
+  -webkit-box-shadow: 0px 3px 0 #443d44;
+  -webkit-box-shadow: 0px 3px 0 #383038;
+  background: -webkit-linear-gradient(center top, #524459 0%, #7e7284 100%) repeat scroll 0 0 transparent;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #524459), color-stop(100%, #7e7284));
+}

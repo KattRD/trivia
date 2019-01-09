@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>Proyecto Trivias</title>
+  
+  <!--  Styles  -->
+  <link rel="stylesheet" href="styles/index.processed.css">
+</head>
+<body>
+  <div id="divBienvenida" class="steep show">
+    <br>
+    <span class="parpadea text">Bienvenidos</span>
+    <h2>Trivias</h2>
+    <p>Si quieres retar tu conocimiento, comienza ahora<p>
+    <form id= "formBienvenida" method="get" action="instrucciones.html">
+      <label for="txtNombre">Ingresa tu nombre:</label>
+      <input type="text" id="txtNombre" name="txtNombre" required>
+      <br><br>
+      <button type="submit" value="Comenzar" onclick="GuardarNombre()" class="boton1">Comenzar!</button>
+      <br><br>
+    </form>
+  </div>
+  <!--
+
+    Wow! What do you want to build?
+
+    You have so many possibilities right now... Looking for something to kick off?
+    How about a simple folio page to show off everything you're going to make!
+   
+  -->
+  
+  <!-- Scripts -->
+  <script src="scripts/index.js"></script>
+</body>
+</html>

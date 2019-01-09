@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>Trivia</title>
+  
+  <!--  Styles  -->
+  <link rel="stylesheet" href="styles/index.processed.css">
+</head>
+<body>
+  <h1>Geografía</h1>
+  <form id="FormularioGeografia" action="Resultado.html">
+    <div class="steep show" id="steep-1">
+      <h2>1. ¿Cuál es la capital de Italia?</h2>
+      <div>
+        <label>
+          <input type="radio" name="steep-001" value="0" onclick="SumarResultadoG(1);MostrarSiguiente()">Venecia
+        </label>
+        <label>
+          <input type="radio" name="steep-001" value="1" onclick="SumarResultadoG(1);MostrarSiguiente()">Roma
+        </label>
+        <label>
+          <input type="radio" name="steep-001" value="2" onclick="SumarResultadoG(1);MostrarSiguiente()">Florencia
+        </label>
+      </div>
+    </div>
+    <div class="steep" id="steep-2">
+      <h2>2. ¿Donde se encuentra Machu Pichu?</h2>
+      <div>
+        <label>
+          <input type="radio" name="steep-002" value="0" onclick="SumarResultadoG(2);MostrarSiguiente2()">Colombia
+        </label>
+        <label>
+          <input type="radio" name="steep-002" value="1" onclick="SumarResultadoG(2);MostrarSiguiente2()"> Argentina
+        </label>
+        <label>
+          <input type="radio" name="steep-002" value="2" onclick="SumarResultadoG(2);MostrarSiguiente2()"> Perú
+        </label>
+      </div>
+    </div>
+    <div class="steep" id="steep-3">
+      <h2>3. ¿Cuál es la montaña más alta del mundo?</h2>
+      <div>
+        <label>
+          <input type="radio" name="steep-003" value="0" onclick="SumarResultadoG(3)">Monte Everest
+        </label>
+        <label>
+          <input type="radio" name="steep-003" value="1" onclick="SumarResultadoG(3)">El pico de Orizaba
+        </label>
+        <label>
+          <input type="radio" name="steep-003" value="2" onclick="SumarResultadoG(3)"> El monte Malaku
+        </label>
+      </div>
+      <button id="btnEnviar" type="submit" value="enviar" onclick="GuardarResultado()">Enviar</button>
+    </div>
+  </form>
+
+  <!--
+
+    Wow! What do you want to build?
+
+    You have so many possibilities right now... Looking for something to kick off?
+    How about a simple folio page to show off everything you're going to make!
+   
+  -->
+  
+  <!-- Scripts -->
+  <script src="scripts/index.js"></script>
+</body>
+</html>
